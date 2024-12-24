@@ -36,12 +36,13 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
 
   return (
     <div className="min-h-screen bg-purple-600 flex flex-col items-center justify-center p-4">
-      <div className="text-white mr-4 pb-14 justify-center text-center w-full max-w-md text-4xl font-extrabold">
       <img
         src={avatarImg}
         alt="image"
-        className="w-100 h-100 rounded-full object-cover flex-shrink-0 justify-center"
+        className="flex w-36 h-36 rounded-full"
       />
+      <div className="text-white mr-4 pb-5 mt-3 justify-center text-center w-full max-w-md text-4xl font-extrabold">
+    
         <h1>Aricle2Slides.ai</h1>
       </div>
       <div className="bg-white rounded-2xl p-8 w-full max-w-md">
