@@ -95,9 +95,9 @@ function App() {
           ))}
           {isLoading && (
             <div className="flex gap-2 items-center text-gray-500">
-              <div className="w-2 h-2 bg-indigo-600 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-              <div className="w-2 h-2 bg-indigo-600 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-              <div className="w-2 h-2 bg-indigo-600 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+              <div className="w-4 h-4 bg-red-600 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+              <div className="w-4 h-4 bg-red-600 rounded-full animate-bounce" style={{ animationDelay: '200ms' }} />
+              <div className="w-4 h-4 bg-red-600 rounded-full animate-bounce" style={{ animationDelay: '400ms' }} />
             </div>
           )}
           <div ref={messagesEndRef} />

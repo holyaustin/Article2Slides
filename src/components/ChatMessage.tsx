@@ -11,8 +11,8 @@ interface ChatMessageProps {
 export const ChatMessage: React.FC<ChatMessageProps> = ({ message, userAvatar }) => {
   const isUser = message.role === 'user';
   const avatarSrc = isUser 
-    ? (userAvatar || 'https://via.placeholder.com/40') 
-    : 'https://images.unsplash.com/photo-1531379410502-63bfe8cdaf6f?w=64&h=64&fit=crop';
+    ? (userAvatar || 'https://media.istockphoto.com/id/2175792656/photo/male-user-profile-3d-illustration.jpg?s=1024x1024&w=is&k=20&c=xJ3DKm-JdFejVQFDRItNvfew7IVFaBNY7tTZ2cHxQWE=') 
+    : 'https://media.istockphoto.com/id/1345658982/photo/ai-microprocessor-on-motherboard-computer-circuit.jpg?s=1024x1024&w=is&k=20&c=SIzGFhl8DDCxaBUXkAOegQ9TecRA3Qp2vbJi5LCXtBU=';
 
   const processMessageContent = (content: string) => {
     const codeBlockRegex = /```(\w+)?\n([\s\S]*?)```/g;
