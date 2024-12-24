@@ -75,6 +75,7 @@ function App() {
               <p className="text-xs opacity-75">AI Assistant</p>
             </div>
           </div>
+          <h1 className='text-2xl font-bolder'><a href="/">Home</a></h1>
           <div className="flex items-center gap-2">
             <img
               src={userSettings.avatar || 'https://media.istockphoto.com/id/2175792656/photo/male-user-profile-3d-illustration.jpg?s=1024x1024&w=is&k=20&c=xJ3DKm-JdFejVQFDRItNvfew7IVFaBNY7tTZ2cHxQWE='}

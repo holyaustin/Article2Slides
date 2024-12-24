@@ -12,6 +12,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
     name: '',
     avatar: '',
   });
+  const avatarImg= 'https://media.istockphoto.com/id/1345658982/photo/ai-microprocessor-on-motherboard-computer-circuit.jpg?s=1024x1024&w=is&k=20&c=SIzGFhl8DDCxaBUXkAOegQ9TecRA3Qp2vbJi5LCXtBU=';
 
   const handleAvatarChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -35,8 +36,13 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
 
   return (
     <div className="min-h-screen bg-purple-600 flex flex-col items-center justify-center p-4">
-      <div className="text-white mr-4 pb-14 text-center w-full max-w-md text-4xl font-extrabold">
-        <h1>SlideCreator.ai</h1>
+      <div className="text-white mr-4 pb-14 justify-center text-center w-full max-w-md text-4xl font-extrabold">
+      <img
+        src={avatarImg}
+        alt="image"
+        className="w-100 h-100 rounded-full object-cover flex-shrink-0 justify-center"
+      />
+        <h1>Aricle2Slides.ai</h1>
       </div>
       <div className="bg-white rounded-2xl p-8 w-full max-w-md">
         <h1 className="text-2xl font-bold text-gray-800 mb-6 text-center">
